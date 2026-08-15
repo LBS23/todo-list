@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List | The Odin Project</title>
+</head>
+<body>
+    <h1>To-Do List Template</h1>
+    <div id="main">
+        <button id="modalBtn">Add Task</button>
+        <div id="formModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="resetBtn">&times;</span>
+                <form id="taskForm" class="modalForm">
+                    <label for="taskName">
+                        Task Name:
+                        <input id="taskName" type="text" name="taskName" required>
+                    </label>
+                    <label for="taskDescription">
+                        Description:
+                        <input id="taskDescription" type="text" name="taskDescription" required>
+                    </label>
+                    <label for="taskDate">
+                        Due Date:
+                        <input type="date" name="taskDate" id="taskDate" required>
+                    </label>
+                    <label>
+                        Task Priority:
+                    </label>
+                    <span>Low</span>
+                    <input type="radio" name="taskPrio" value="low">
+                    <span>Medium</span>
+                    <input type="radio" name="taskPrio" value="medium">
+                    <span>High</span>
+                    <input type="radio" name="taskPrio" value="high">
+                    <button id="addTask" class="add-button">Confirm</button> 
+                </form> 
+            </div>
+        </div>
+    </div>
+    <div id="card-section">
+
+    </div>
+</body>
+</html>
