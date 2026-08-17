@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=delete" />
+    <title>To-Do List | The Odin Project</title>
+<script defer src="main.js"></script></head>
+<body>
+    <h1>To-Do List Template</h1>
+    <div id="main">
+        <button id="modalBtn">Add Task</button>
+        <div id="formModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="resetBtn">&times;</span>
+                <form id="taskForm" class="modalForm">
+                    <label for="taskName">
+                        Task Name:
+                    </label>
+                        <input id="taskName" type="text" name="taskName" required>
+                    <label for="taskDescription">
+                        Description:
+                    </label>
+                        <textarea id="taskDescription" rows="5" maxlength="100" name="taskDescription" required></textarea>
+                    <label for="taskDate">
+                        Due Date:
+                    </label>
+                        <input type="date" name="taskDate" id="taskDate" required>
+                    <div id="radio-checks">
+                    <label>
+                        Task Priority:
+                    </label>
+                    <span>Low
+                    <input type="radio" name="taskPrio" value="low" required>
+                    </span>
+                    <span>Medium 
+                    <input type="radio" name="taskPrio" value="medium" required>
+                    </span>
+                    <span>High 
+                    <input type="radio" name="taskPrio" value="high" required>
+                    </span>
+                </div>
+                    <button id="addTask" class="add-button">Confirm</button> 
+                </form> 
+            </div>
+        </div>
+    </div>
+    <div id="card-section">
+
+    </div>
+</body>
+</html>
